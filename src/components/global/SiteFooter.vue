@@ -1,13 +1,58 @@
 <!--|== Template =============================================================================== -->
 <template>
   <footer class="footer">
-    <router-link :to="{ name: 'Home' }">Home</router-link> |
-    <router-link :to="{ name: 'About' }">About</router-link>
+    <div class="footer__social">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <ul>
+              <li v-for="(item, index) in social" :key="index">
+                <a :href="item.url" target="_blank" :alt="item.name">
+                  <font-awesome-icon
+                    :icon="['fab', `${item.icon}`]"
+                    class="footer__icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a :href="'mailto:' + contact.email + '?subject=Hello'">
+                  <font-awesome-layers full-width class="footer__icon">
+                    <font-awesome-icon icon="envelope" />
+                    <span
+                      class="fa-layers-counter"
+                      style="background: Tomato; right: -3px"
+                      >1</span
+                    >
+                  </font-awesome-layers>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns">
+            <div class="footer__copyright--txt">
+              Made with
+              <a href="https://vuejs.org/" target="_blank">
+                <div class="icon icon__vue"></div>
+              </a>
+              by J.D. Hillen
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
 <!--|== Scripts ================================================================================ -->
 <script>
+import { mapState } from 'vuex';
+
 export default {
   name: 'site-footer',
 
@@ -35,7 +80,9 @@ export default {
 
   unmounted() {},
 
-  computed: {},
+  computed: {
+    ...mapState(['contact', 'social'])
+  },
 
   methods: {},
 
@@ -45,10 +92,48 @@ export default {
 
 <!--|== CSS ==================================================================================== -->
 <style lang="scss" scoped>
-footer {
+.footer {
   width: 100%;
-  padding: 25px 0;
-  background-color: black(0.8);
   text-align: center;
+
+  &__social {
+    text-align: center;
+    padding: 20px 0;
+    background-color: black(0.65);
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      li {
+        padding: 0 10px;
+        display: inline;
+
+        a {
+          color: white(0.75);
+          transition: 300ms color;
+
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    padding: 30px 0;
+    background-color: black(0.75);
+
+    &--txt {
+      font-family: 'Open Sans Light';
+      font-size: 8px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $white;
+    }
+  }
 }
 </style>

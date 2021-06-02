@@ -5,7 +5,7 @@
     <div class="container">
       <div class="row">
         <div class="twelve colums">
-          <hello-world />
+          <h1>Home</h1>
         </div>
       </div>
     </div>
@@ -15,7 +15,6 @@
 <!--|== Scripts ================================================================================ -->
 <script>
 import MetaData from '../components/global/MetaData.vue';
-import HelloWorld from '../components/HelloWorld.vue';
 
 export default {
   name: 'home-page',
@@ -23,8 +22,7 @@ export default {
   props: {},
 
   components: {
-    MetaData,
-    HelloWorld
+    MetaData
   },
 
   data() {

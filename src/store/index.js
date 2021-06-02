@@ -1,31 +1,39 @@
 // ==|== Imports ===================================================================================
 import { createStore } from 'vuex';
+import Service from '../services';
 
 // ==|== Store =====================================================================================
 export default createStore({
   // ==|== State ===================================================================================
   state: {
-    count: 0
+    contact: null,
+    social: null
   },
 
   // ==|== Actions =================================================================================
   actions: {
-    setCount({ commit }) {
-      commit('SET_COUNT');
+    fetchContact({ commit }) {
+      return Service.getContact().then((response) => {
+        commit('SET_CONTACT', response.data);
+      });
+    },
+    fetchSocial({ commit }) {
+      return Service.getSocial().then((response) => {
+        commit('SET_SOCIAL', response.data);
+      });
     }
   },
 
   // ==|== Mutations ===============================================================================
   mutations: {
-    SET_COUNT(state) {
-      state.count = state.count + 1;
+    SET_CONTACT(state, value) {
+      state.contact = value;
+    },
+    SET_SOCIAL(state, value) {
+      state.social = value;
     }
   },
 
   // ==|== Getters =================================================================================
-  getters: {
-    count: (state) => {
-      return state.count;
-    }
-  }
+  getters: {}
 });

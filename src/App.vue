@@ -26,7 +26,10 @@ export default {
     return {};
   },
 
-  beforeCreate() {},
+  beforeCreate() {
+    this.$store.dispatch('fetchContact');
+    this.$store.dispatch('fetchSocial');
+  },
 
   created() {},
 

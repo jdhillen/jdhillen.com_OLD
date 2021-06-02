@@ -16,5 +16,9 @@ const apiClient = axios.create({
 export default {
   getContact() {
     return apiClient.get('/resume/contact/1/');
+  },
+
+  getSocial() {
+    return apiClient.get('/links/social/');
   }
 };
