@@ -1,11 +1,17 @@
 <!--|== Template =============================================================================== -->
 <template>
   <MetaData :data="metaData" />
-  <section class="page-not-found">
-    <h1>404</h1>
-    <router-link class="button" :to="{ name: 'Home' }"
-      >Back to the home page</router-link
-    >
+  <section class="page page-not-found">
+    <div class="container">
+      <div class="row">
+        <div class="twelve colums text-center">
+          <h1>404</h1>
+          <router-link class="button" :to="{ name: 'Home' }"
+            >Back to the home page</router-link
+          >
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 

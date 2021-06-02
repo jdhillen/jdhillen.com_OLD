@@ -1,40 +1,22 @@
 <!--|== Template =============================================================================== -->
 <template>
-  <MetaData :data="metaData" />
-  <section class="page home">
-    <div class="container">
-      <div class="row">
-        <div class="twelve colums">
-          <hello-world />
-        </div>
-      </div>
-    </div>
-  </section>
+  <nav id="nav">
+    <router-link :to="{ name: 'Home' }">Home</router-link> |
+    <router-link :to="{ name: 'About' }">About</router-link>
+  </nav>
 </template>
 
 <!--|== Scripts ================================================================================ -->
 <script>
-import MetaData from '../components/global/MetaData.vue';
-import HelloWorld from '../components/HelloWorld.vue';
-
 export default {
-  name: 'home-page',
+  name: 'site-navigation',
 
   props: {},
 
-  components: {
-    MetaData,
-    HelloWorld
-  },
+  components: {},
 
   data() {
-    return {
-      metaData: {
-        title: 'Home',
-        description: 'This is the description for the Home page',
-        image: 'https://via.placeholder.com/1500x780'
-      }
-    };
+    return {};
   },
 
   beforeCreate() {},
@@ -63,6 +45,10 @@ export default {
 
 <!--|== CSS ==================================================================================== -->
 <style lang="scss" scoped>
-.home {
+nav {
+  width: 100%;
+  padding: 25px 0;
+  background-color: black(0.8);
+  text-align: center;
 }
 </style>
