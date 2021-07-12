@@ -16,7 +16,7 @@
 ```bash
 
 # clone the repo
-git clone https://github.com/jdhillen/vue-template.git
+git clone https://github.com/jdhillen/jdhillen.com.git
 
 # cd into the folder
 cd vue-template
