@@ -53,7 +53,7 @@ export default {
   beforeMount() {},
 
   mounted() {
-    console.log(this.url);
+    // console.log(this.url);
   },
 
   beforeUpdate() {},

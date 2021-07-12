@@ -5,7 +5,7 @@
       <div class="container">
         <div class="row">
           <div class="twelve columns">
-            <ul>
+            <ul v-if="social">
               <li v-for="(item, index) in social" :key="index">
                 <a :href="item.url" target="_blank" :alt="item.name">
                   <font-awesome-icon
@@ -14,7 +14,7 @@
                   />
                 </a>
               </li>
-              <li>
+              <li v-if="contact">
                 <a :href="'mailto:' + contact.email + '?subject=Hello'">
                   <font-awesome-layers full-width class="footer__icon">
                     <font-awesome-icon icon="envelope" />
