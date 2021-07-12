@@ -19,7 +19,7 @@
 git clone https://github.com/jdhillen/jdhillen.com.git
 
 # cd into the folder
-cd vue-template
+cd jdhillen.com
 
 # install dependencies
 yarn install
