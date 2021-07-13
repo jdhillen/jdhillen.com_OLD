@@ -1,9 +1,15 @@
 <!--|== Template =============================================================================== -->
 <template>
   <nav id="nav" class="nav">
-    <div class="nav__desktop">
-      <router-link :to="{ name: 'Home' }">Home</router-link> |
-      <router-link :to="{ name: 'About' }">About</router-link>
+    <div class="container">
+      <div class="row">
+        <div class="two columns nav__logo">
+          <router-link :to="{ name: 'Home' }">Logo</router-link>
+        </div>
+        <div class="ten columns nav__desktop">
+          <router-link :to="{ name: 'About' }">About</router-link>
+        </div>
+      </div>
     </div>
     <Hamburger ref="hamburger" class="nav__ham" @click="toggleNav" />
     <div ref="mobileNav" class="nav__mobile bokeh">
@@ -77,9 +83,25 @@ export default {
   justify-content: center;
   align-items: center;
 
+  &__logo,
   &__desktop {
+    a {
+      text-transform: uppercase;
+      color: $white;
+      padding: 0 10px;
+    }
+  }
+
+  &__logo {
+    color: $white;
+  }
+
+  &__desktop {
+    text-align: right;
+
     @media (max-width: 750px) {
       visibility: hidden;
+      display: none;
     }
   }
 
@@ -115,6 +137,7 @@ export default {
     &.active {
       visibility: visible;
       opacity: 1;
+
       @media (min-width: 750px) {
         visibility: hidden;
         opacity: 0;
@@ -126,6 +149,7 @@ export default {
       text-transform: uppercase;
       font-size: 4rem;
       line-height: 4rem;
+      font-family: 'Open Sans Bold';
       padding: 5px 0;
     }
   }
