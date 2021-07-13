@@ -1,14 +1,13 @@
 <!--|== Template =============================================================================== -->
 <template>
   <nav id="nav" class="nav">
-    <div class="container">
-      <div class="row">
-        <div class="two columns nav__logo">
-          <router-link :to="{ name: 'Home' }">Logo</router-link>
-        </div>
-        <div class="ten columns nav__desktop">
-          <router-link :to="{ name: 'About' }">About</router-link>
-        </div>
+    <div class="nav__main">
+      <div class="nav__logo">
+        <router-link :to="{ name: 'Home' }">Logo</router-link>
+      </div>
+      <div class="nav__desktop">
+        <router-link :to="{ name: 'About' }">About</router-link>
+        <router-link :to="{ name: 'Work' }">Work</router-link>
       </div>
     </div>
     <Hamburger ref="hamburger" class="nav__ham" @click="toggleNav" />
@@ -18,6 +17,9 @@
       >
       <router-link :to="{ name: 'About' }" @click.native="toggleNav()"
         >About</router-link
+      >
+      <router-link :to="{ name: 'Work' }" @click.native="toggleNav()"
+        >Work</router-link
       >
     </div>
   </nav>
@@ -83,6 +85,12 @@ export default {
   justify-content: center;
   align-items: center;
 
+  &__main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
   &__logo,
   &__desktop {
     a {
@@ -97,6 +105,7 @@ export default {
   }
 
   &__desktop {
+    flex: 1;
     text-align: right;
 
     @media (max-width: 750px) {
