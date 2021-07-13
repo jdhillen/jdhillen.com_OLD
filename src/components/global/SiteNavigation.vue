@@ -89,19 +89,18 @@ export default {
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin: 0 10px;
   }
 
   &__logo,
   &__desktop {
     a {
-      text-transform: uppercase;
+      font-family: 'Open Sans Regular';
       color: $white;
+      text-transform: uppercase;
+
       padding: 0 10px;
     }
-  }
-
-  &__logo {
-    color: $white;
   }
 
   &__desktop {
