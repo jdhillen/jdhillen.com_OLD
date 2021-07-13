@@ -1,6 +1,6 @@
 <!--|== Template =============================================================================== -->
 <template>
-  <div ref="ham" class="ham" @click="toggleHam()">
+  <div ref="ham" class="ham">
     <span></span>
     <span></span>
     <span></span>
@@ -10,7 +10,7 @@
 <!--|== Scripts ================================================================================ -->
 <script>
 export default {
-  name: 'index-page',
+  name: 'hamburger',
 
   props: {},
 
@@ -39,7 +39,7 @@ export default {
   computed: {},
 
   methods: {
-    toggleHam() {
+    toggle() {
       this.$refs.ham.classList.toggle('active');
     }
   },
@@ -66,6 +66,8 @@ export default {
     width: 65%;
     height: 2px;
     transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -webkit-transition: all 250ms ease-in-out;
     background: $white;
 
     &:nth-child(1) {

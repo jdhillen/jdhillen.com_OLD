@@ -5,7 +5,17 @@
     <div class="container">
       <div class="row">
         <div class="twelve colums">
-          <h1>Home</h1>
+          <div class="home__img">
+            <img
+              src="../assets/img/logos/code_coffee_metal.png"
+              alt="Code Coffee Metal"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve colums text-center">
+          <p>New site is under development.</p>
         </div>
       </div>
     </div>
@@ -62,5 +72,14 @@ export default {
 <!--|== CSS ==================================================================================== -->
 <style lang="scss" scoped>
 .home {
+  &__img {
+    max-width: 250px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 </style>

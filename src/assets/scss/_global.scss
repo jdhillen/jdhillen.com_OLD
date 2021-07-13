@@ -30,7 +30,7 @@ html {
 
 .page {
   flex: auto;
-  margin-top: 25px;
+  margin: 25px 0;
 }
 
 // ==|== Disable Click Events ======================================================================
@@ -48,4 +48,10 @@ html {
 // ==|== Text Align Center =========================================================================
 .text-center {
   text-align: center;
+}
+
+// ==|== Bokeh Effect ==============================================================================
+.bokeh {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
