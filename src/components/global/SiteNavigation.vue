@@ -3,17 +3,22 @@
   <nav id="nav">
     <router-link :to="{ name: 'Home' }">Home</router-link> |
     <router-link :to="{ name: 'About' }">About</router-link>
+    <Hamburger />
   </nav>
 </template>
 
 <!--|== Scripts ================================================================================ -->
 <script>
+import Hamburger from '../navigation/Hamburger.vue';
+
 export default {
   name: 'site-navigation',
 
   props: {},
 
-  components: {},
+  components: {
+    Hamburger
+  },
 
   data() {
     return {};
