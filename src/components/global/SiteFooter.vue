@@ -98,8 +98,8 @@ export default {
 
   &__social {
     text-align: center;
-    padding: 20px 0;
-    background-color: black(0.65);
+    padding: 10px 0;
+    background-color: black(0.7);
 
     ul {
       margin: 0;
@@ -124,8 +124,8 @@ export default {
 
   &__copyright {
     text-align: center;
-    padding: 30px 0;
-    background-color: black(0.75);
+    padding: 25px 0;
+    background-color: black(0.8);
 
     &--txt {
       font-family: 'Open Sans Light';

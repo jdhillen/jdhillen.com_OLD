@@ -52,8 +52,8 @@ export default {
 <style lang="scss">
 .ham {
   position: absolute;
-  top: 12px;
-  right: 25px;
+  top: 0;
+  right: 8px;
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -63,7 +63,7 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
+    width: 65%;
     height: 2px;
     transition: all 250ms ease-in-out;
     background: $white;
@@ -95,10 +95,6 @@ export default {
       top: 50%;
       transform: translate(-50%, -50%) rotate(-45deg);
     }
-  }
-
-  @media (min-width: 750px) {
-    display: none;
   }
 }
 </style>
