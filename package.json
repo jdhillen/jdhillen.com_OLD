@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "ssr:dev": "vite-ssr dev",
+    "ssr:build": "vite-ssr build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.35",
