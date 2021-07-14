@@ -27,8 +27,8 @@ export default {
   },
 
   beforeCreate() {
-    this.$store.dispatch('fetchContact');
-    this.$store.dispatch('fetchSocial');
+    // this.$store.dispatch('fetchContact');
+    // this.$store.dispatch('fetchSocial');
   },
 
   created() {},
