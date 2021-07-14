@@ -15,7 +15,7 @@
       </div>
       <div class="row">
         <div class="twelve colums text-center">
-          <p>New site is under development.</p>
+          <p>New site under development.</p>
         </div>
       </div>
     </div>
