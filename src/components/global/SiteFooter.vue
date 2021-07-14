@@ -51,7 +51,7 @@
 
 <!--|== Scripts ================================================================================ -->
 <script>
-import Service from '../../services';
+import { mapState } from 'vuex';
 
 export default {
   name: 'site-footer',
@@ -61,10 +61,7 @@ export default {
   components: {},
 
   data() {
-    return {
-      contact: null,
-      social: null
-    };
+    return {};
   },
 
   beforeCreate() {},
@@ -73,15 +70,7 @@ export default {
 
   beforeMount() {},
 
-  mounted() {
-    Service.getContact().then((response) => {
-      this.contact = response.data;
-    });
-
-    Service.getSocial().then((response) => {
-      this.social = response.data;
-    });
-  },
+  mounted() {},
 
   beforeUpdate() {},
 
@@ -91,7 +80,9 @@ export default {
 
   unmounted() {},
 
-  computed: {},
+  computed: {
+    ...mapState(['contact', 'social'])
+  },
 
   methods: {},
 
