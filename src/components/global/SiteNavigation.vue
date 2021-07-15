@@ -3,7 +3,9 @@
   <nav id="nav" class="nav">
     <div class="nav__main">
       <div class="nav__logo">
-        <router-link :to="{ name: 'Home' }">Logo</router-link>
+        <router-link :to="{ name: 'Home' }">
+          <div class="nav__logo--img"></div>
+        </router-link>
       </div>
       <div class="nav__desktop">
         <router-link :to="{ name: 'About' }">About</router-link>
@@ -86,20 +88,28 @@ export default {
   align-items: center;
 
   &__main {
+    position: relative;
     width: 100%;
+    height: 20px;
     display: flex;
     flex-direction: row;
     margin: 0 10px;
   }
 
-  &__logo,
-  &__desktop {
-    a {
-      font-family: 'Open Sans Regular';
-      color: $white;
-      text-transform: uppercase;
+  &__logo {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -5px;
+    left: 0;
 
-      padding: 0 10px;
+    &--img {
+      width: 30px;
+      height: 30px;
+      background-image: url('/src/assets/img/logos/square.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
     }
   }
 
@@ -110,6 +120,14 @@ export default {
     @media (max-width: 750px) {
       visibility: hidden;
       display: none;
+    }
+
+    a {
+      font-family: 'Open Sans Regular';
+      color: $white;
+      text-transform: uppercase;
+
+      padding: 0 10px;
     }
   }
 
