@@ -4,7 +4,7 @@
 
 ---
 
-## [v0.0.1](https://github.com/jdhillen/vue-template/releases/tag/0.0.1) - 2021-08-18
+## [v0.0.1](https://github.com/jdhillen/jdhillen.com/releases/tag/0.0.1) - 2021-08-18
 
 ### Update
 
