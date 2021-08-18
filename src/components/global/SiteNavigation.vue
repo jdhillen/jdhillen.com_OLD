@@ -14,9 +14,6 @@
     </div>
     <Hamburger ref="hamburger" class="nav__ham" @click="toggleNav" />
     <div ref="mobileNav" class="nav__mobile bokeh">
-      <router-link :to="{ name: 'Home' }" @click.native="toggleNav()"
-        >Home</router-link
-      >
       <router-link :to="{ name: 'About' }" @click.native="toggleNav()"
         >About</router-link
       >
