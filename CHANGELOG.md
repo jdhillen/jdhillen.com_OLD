@@ -4,6 +4,19 @@
 
 ---
 
+## [v0.0.2](https://github.com/jdhillen/jdhillen.com/releases/tag/0.0.1) - 2021-09-22
+
+### Update
+
+- Package updates to latest versions
+- Paths to use new @ alias
+
+### Fixed
+
+- @ alias in vite.config.js
+
+---
+
 ## [v0.0.1](https://github.com/jdhillen/jdhillen.com/releases/tag/0.0.1) - 2021-08-18
 
 ### Update
