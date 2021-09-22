@@ -7,7 +7,7 @@
         <div class="twelve colums">
           <div class="home__img">
             <img
-              src="../assets/img/logos/code_coffee_metal.png"
+              src="@/assets/img/logos/code_coffee_metal.png"
               alt="Code Coffee Metal"
             />
           </div>
@@ -24,7 +24,7 @@
 
 <!--|== Scripts ================================================================================ -->
 <script>
-import MetaData from '../components/global/MetaData.vue';
+import MetaData from '@/components/global/MetaData.vue';
 
 export default {
   name: 'home-page',
