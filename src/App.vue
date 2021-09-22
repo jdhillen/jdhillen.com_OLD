@@ -9,8 +9,8 @@
 
 <!--|== Scripts ================================================================================ -->
 <script>
-import SiteNavigation from './components/global/SiteNavigation.vue';
-import SiteFooter from './components/global/SiteFooter.vue';
+import SiteNavigation from '@/components/global/SiteNavigation.vue';
+import SiteFooter from '@/components/global/SiteFooter.vue';
 
 export default {
   name: 'app',

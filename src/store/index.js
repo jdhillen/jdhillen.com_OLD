@@ -1,6 +1,6 @@
 // ==|== Imports ===================================================================================
 import { createStore } from 'vuex';
-import Service from '../services';
+import Service from '@/services';
 
 // ==|== Store =====================================================================================
 export default createStore({

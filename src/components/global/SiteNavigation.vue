@@ -26,7 +26,7 @@
 
 <!--|== Scripts ================================================================================ -->
 <script>
-import Hamburger from '../navigation/Hamburger.vue';
+import Hamburger from '@/components/navigation/Hamburger.vue';
 
 export default {
   name: 'site-navigation',
