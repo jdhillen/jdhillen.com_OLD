@@ -4,7 +4,7 @@
 
 ---
 
-## [v0.0.3](https://github.com/jdhillen/jdhillen.com/releases/tag/0.0.1) - 2021-10-28
+## [v0.0.3](https://github.com/jdhillen/jdhillen.com/releases/tag/0.0.3) - 2021-10-28
 
 ### Update
 
@@ -13,7 +13,7 @@
 
 ---
 
-## [v0.0.2](https://github.com/jdhillen/jdhillen.com/releases/tag/0.0.1) - 2021-09-22
+## [v0.0.2](https://github.com/jdhillen/jdhillen.com/releases/tag/0.0.2) - 2021-09-22
 
 ### Update
 
