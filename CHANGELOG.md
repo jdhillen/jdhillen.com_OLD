@@ -4,6 +4,15 @@
 
 ---
 
+## [v0.0.3](https://github.com/jdhillen/jdhillen.com/releases/tag/0.0.1) - 2021-10-28
+
+### Update
+
+- Package updates to latest versions
+- _redirects for Netlify deployment
+
+---
+
 ## [v0.0.2](https://github.com/jdhillen/jdhillen.com/releases/tag/0.0.1) - 2021-09-22
 
 ### Update
