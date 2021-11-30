@@ -22,10 +22,10 @@ git clone https://github.com/jdhillen/jdhillen.com.git
 cd jdhillen.com
 
 # install dependencies
-yarn install
+npm install
 
 # serve application at localhost:3000
-yarn dev
+npm run dev
 ```
 
 ---
